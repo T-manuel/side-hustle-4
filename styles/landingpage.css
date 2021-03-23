@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(to bottom left, rgba(43, 180, 15, 0.952), rgba(241, 161, 11, 0.952));
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.container .phpOutput {
+  min-height: 3vh;
+  padding: 2px;
+  text-align: center;
+}
+
+.container .phpOutput1 {
+  min-height: 4vh;
+  padding: 2px;
+  text-align: center;
+}
+
+.container a.phpOutput2 {
+  text-decoration: none;
+  color: white;
+  background: red;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+.container .formgroup {
+  position: relative;
+  padding: 2px;
+  width: 200px;
+  margin-bottom: 10px;
+  background: white;
+}
+
+.container .formgroup .formlabel {
+  color: rgba(16, 66, 6, 0.945);
+  position: absolute;
+  padding: 1px;
+  top: 0;
+  left: -3;
+  font-size: 13px;
+}
+
+.container .formgroup .formControl {
+  border: none;
+  outline: none;
+  background: none;
+  padding-top: 15px;
+}
+
+.container .formgroup #btnEdit-1, .container .formgroup #btnEdit-2, .container .formgroup #btnEdit-3, .container .formgroup #btnEdit-4, .container .formgroup #btnEdit-5 {
+  background: rgba(16, 73, 5, 0.952);
+  position: absolute;
+  top: 0;
+  font-size: small;
+  font-family: serif;
+  margin: 3px -5px 0 20px;
+}
+
+.container .formgroup1 {
+  padding: 3px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container .formgroup1 #btn-save {
+  background: #054faf;
+}
+
+.btn {
+  border: none;
+  color: white;
+  outline: none;
+  padding: 7px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+#btn-delete {
+  background: red;
+  margin-bottom: 30px;
+}
