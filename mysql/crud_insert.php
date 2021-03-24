@@ -50,7 +50,7 @@
 
 				header("location: ../login.php");
 			}*/
-			elseif ((mysqli_num_rows($result_name_c) && mysqli_num_rows($result_name_d)) == 1){
+			if ((mysqli_num_rows($result_name_c) && mysqli_num_rows($result_name_d)) == 1){
 
 				$_SESSION['message'] = "username and email exists";
 				$_SESSION["usernames-a"] = $name;
