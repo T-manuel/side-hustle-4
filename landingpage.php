@@ -24,6 +24,16 @@
         $firstName = $_POST["firstname"];
         $surName = $_POST["surname"];
         $middleName = $_POST["middlename"];
+        
+        //avoid user from updating the username or email an existing username or email
+        
+        /* $e_query = "SELECT * FROM tmanuel_users WHERE usernames = $username";
+        $result_name_e = @mysqi_query($conn, $e_query);
+        
+        $e_query = "SELECT * FROM tmanuel_users WHERE emails = $mail";
+        $result_name_e = @mysqi_query($conn, $e_query);
+        
+        if ((mysqli_nums_rows()) */
 
         $conn->query("UPDATE tmanuel_users SET usernames = '$userName', emails = '$mail', surname = '$surName',
             firstname = '$firstName', middleName = '$middleName' WHERE tmanuel_users.id = $userID");
