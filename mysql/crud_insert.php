@@ -80,15 +80,9 @@
 			/*session_start();
 			$_SESSION["usernames"] = $name;
 			$_SESSION["passwords"] = $passID;
-			$_SESSION["emails"] = $email;*/
-			$row = $result_name->fetch_assoc();
-			$_SESSION["id"] = $row["id"];
-			$_SESSION["username"] = $row["usernames"];
-			$_SESSION["surname"] = $row["surname"];
-			$_SESSION["firstname"] = $row["firstname"];
-			$_SESSION["middlename"] = $row["middleName"];
-			$_SESSION["email"] = $row["emails"];
-			header("location: ../landingpage.php");
+			$_SESSION["emails"] = $email; */
+			
+			header("location: ../login.php");
 		}	
         }
         else {
